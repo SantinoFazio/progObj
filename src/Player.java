@@ -53,6 +53,6 @@ public class Player {
             this.matchCounter++;
         }
 
-    
+
 
 }

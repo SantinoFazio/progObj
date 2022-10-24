@@ -2,24 +2,17 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Season {
-
-    Season(String name, Date startDate, Date endDate){
+    Season(String name, Date startDate, Date endDate) {
         this.setName(name);
         this.setStartDate(startDate);
         this.setEndDate(endDate);
-
     }
-
-
     private ArrayList<Match> matchs;
     private String name;
     private Date startDate;
     private Date endDate;
 
-    public Season() {
-    }
-
-    public ArrayList<Match> getMatchesByDate(Date date){
+    public ArrayList <Match> getMatchesByDate(Date date){
         return new ArrayList <Match> ();
     }
     public ArrayList <Match> addMatch(Match match){
@@ -41,5 +34,21 @@ public class Season {
     public void setEndDate (Date endDate){
         this.endDate = endDate;
         return ;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public ArrayList<Match> getMatchs() {
+        return matchs;
+    }
+
+    public void setMatchs(ArrayList<Match> matchs) {
+        this.matchs = matchs;
     }
 }
